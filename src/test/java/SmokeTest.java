@@ -9,7 +9,6 @@ public class SmokeTest {
     private static WebDriver browser;
     @Before
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "/Users/arkadi/Documents/chromedriver-mac-arm64/chromedriver");
         browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
