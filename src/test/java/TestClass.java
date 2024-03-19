@@ -1,5 +1,4 @@
-package com.example.lab4;
-
+import LogicFiles.LoginPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +14,7 @@ public class TestClass {
         browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        browser.get(ConfProperties.getProperty("loginpage"));
+        browser.get("https://www.onetwotrip.com/");
 
     }
     @Test

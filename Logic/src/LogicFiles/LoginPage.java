@@ -1,9 +1,8 @@
-package com.example.lab4;
-
+package LogicFiles;
 import Units.Locators;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
