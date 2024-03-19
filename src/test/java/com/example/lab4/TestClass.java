@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
-public class MainTest {
-    private static LoginPage loginPage;
+public class TestClass {
+    public static LoginPage loginPage;
     private static WebDriver browser;
     @Before
     public void setup() {
