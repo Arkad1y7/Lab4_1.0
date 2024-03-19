@@ -1,4 +1,3 @@
-import LogicFiles.LoginPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -6,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
-public class TestClass {
+public class SmokeTest {
     private static LoginPage loginPage;
     private static WebDriver browser;
     @Before

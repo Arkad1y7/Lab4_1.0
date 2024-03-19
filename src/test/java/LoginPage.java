@@ -1,4 +1,3 @@
-package LogicFiles;
 import Units.Locators;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
