@@ -12,7 +12,7 @@ public class Locators {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div/form/div[4]/label/div/input")
+    @FindBy(xpath = "/html/body[@class='appContainer']/div[@class='Lisl6 modal']/div[@class='BU7s4']/div[@class='_9vOEs OJYla']/div[@class='TwHhH aV4fh']/div[@class='wedma']/div[@class='ww4qi']/form/div[@class='feElt'][1]/label[@class='_5-8Ry PBeyC CTM7X hwZgG']/div[@class='DPoZ5']/input[@class='GaXkX']")
     public WebElement loginTextField;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div/div/header/div/div[2]/div[2]/div/button")

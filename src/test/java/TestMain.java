@@ -2,16 +2,17 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import java.util.concurrent.TimeUnit;
 
-public class SmokeTest {
+public class TestMain {
     private static WebDriver browser;
     @Before
     public void setup() {
-        browser = new ChromeDriver();
+        browser = new FirefoxDriver();
         browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        browser.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         browser.get("https://www.onetwotrip.com/");
 
     }
