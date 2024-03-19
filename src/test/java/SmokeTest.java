@@ -6,10 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class SmokeTest {
-    private static LoginPage loginPage;
     private static WebDriver browser;
     @Before
     public void setup() {
+        System.setProperty("webdriver.chrome.driver", "/Users/arkadi/Documents/chromedriver-mac-arm64/chromedriver");
         browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -18,7 +18,7 @@ public class SmokeTest {
     }
     @Test
     public void loginTest() {
-        loginPage = new LoginPage(browser);
+        LoginPage loginPage = new LoginPage(browser);
         loginPage.clickPersonalArea();
         loginPage.inputLogin("test");
         loginPage.inputPassword("test");
