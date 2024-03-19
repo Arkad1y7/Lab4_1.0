@@ -1,5 +1,6 @@
 import Units.Locators;
-import org.junit.jupiter.api.Assertions;
+
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -17,6 +18,6 @@ public class LoginPage {
     public void clickPersonalArea() {locators.personalArea.click();}
     public void clickLoginButton() {locators.LoginButton.click();}
     public void errorChecking() {
-        Assertions.assertEquals(locators.labelTextError.getText(), "Неверный адрес электронной почты");
+        Assert.assertEquals(locators.labelTextError.getText(), "Неверный адрес электронной почты");
     }
 }

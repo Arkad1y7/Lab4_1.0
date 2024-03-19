@@ -18,7 +18,7 @@ public class Locators {
     @FindBy(xpath = "//*[@id=\"app\"]/div/div/header/div/div[2]/div[2]/div/button")
     public WebElement personalArea;
 
-    @FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div/form/div[5]/label/div/input")
+    @FindBy(xpath = "/html/body[@class='appContainer']/div[@class='Lisl6 modal']/div[@class='BU7s4']/div[@class='_9vOEs OJYla']/div[@class='TwHhH aV4fh']/div[@class='wedma']/div[@class='ww4qi']/form/div[@class='feElt'][2]/label[@class='_5-8Ry PBeyC CTM7X']/div[@class='DPoZ5']/input[@class='GaXkX']")
     public WebElement passwordTextField;
 
     @FindBy(xpath = "//*[contains(@data-locator, 'Button SigninForm--submit')]")
