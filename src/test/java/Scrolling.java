@@ -28,7 +28,9 @@ public class Scrolling {
     }
 
     public void tabChecking(WebDriver browser){
+        WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
         String expectedURL = "https://appgallery.huawei.com/app/C103308519?sharePrepath=ag&channelId=Website&id=5b4f8c4b34f44a3e9841688b730a99c9&s=4752CFF79DF3BAE0F7A7372E6AC3F9BAEF20DD6CF61B1E60AB603FE54D752CB3&detailType=0&v=";
+        wait.until(ExpectedConditions.urlToBe(expectedURL));
         String actualUrl = browser.getCurrentUrl();
 
         if(actualUrl.equals(expectedURL)){
